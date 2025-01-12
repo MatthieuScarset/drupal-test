@@ -1,6 +1,6 @@
 {
-  "name": "matthieuscarset/drupal-template",
-  "description": "Project template for Drupal projects with Composer",
+  "name": "matthieuscarset/drupal-test",
+  "description": "Project template to write Automated Tests for in Drupal",
   "type": "project",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -20,12 +20,8 @@
     "php": ">=8.1",
     "composer/installers": "^2.1",
     "cweagans/composer-patches": "^1.7",
-    "drupal/config_ignore": "^3",
-    "drupal/config_split": "^2",
-    "drupal/core-composer-scaffold": "^10",
-    "drupal/core-project-message": "^10",
-    "drupal/core-recommended": "^10",
-    "drupal/shield": "^1",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-recommended": "^11",
     "drush/drush": "^12",
     "vlucas/phpdotenv": "^5",
     "webflo/drupal-finder": "^1"
@@ -47,7 +43,6 @@
       "cweagans/composer-patches": true,
       "drupal/core-composer-scaffold": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "drupal/core-project-message": true,
       "phpstan/extension-installer": true,
       "php-http/discovery": true
     }
@@ -84,9 +79,6 @@
     ],
     "code-scan": [
       "DrupalProject\\composer\\ScriptHandler::codeScan"
-    ],
-    "code-clean": [
-      "./scripts/drupal_thinner.sh"
     ],
     "test": [
       "DrupalProject\\composer\\ScriptHandler::runRest"

@@ -4,31 +4,19 @@
  * @see https://humanstxt.org/humans.txt
  */
 
-/* TEAM */
-Agency:       Your Company
-Contact:      contact [at] yourcompany.xyz
-From:         Some place, Earth
+/* THANKS */
+Name:         Oliver Davies
+Role:         Project based on its work: "Intro to Automated Testing in Drupal"
+Site:         https://www.drupal.org/u/opdavies
 
-Name:         Your Name
+/* TEAM */
+Name:         Matthieu Scarset
 Role:         Developer
-Contact:      your [at] email.com
-Site:         https://yoursite.com
-From:         Your place, Country
+Contact:      m@matthieuscarset.com
+Site:         https://matthieuscarset.com
+From:         Somewhere, Earth
 
 /* SITE */
-Last update:  2024/01/01
+Last update:  2025/01/01
 Language:     English
 Framework:    Drupal
-
-/* THANKS */
-Name:         Matthieu Scarset
-Role:         Author of the Drupal project template
-Contact:      m [at] matthieuscarset.com
-Site:         https://matthieuscarset.com
-From:         France
-
-
-/* SITE */
-Last update: 2024/01/01
-Language: English
-Framework: Drupal
