@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="phpcs-standard">
+  <description>Codestyle ruleset for Drupal</description>
+  <config name="drupal_core_version" value="10"/>
+
+  <!-- Colors messes up the log file so, disabled by default -->
+  <!-- Use it in CLI if you want: `lando phpcs -\-colors` -->
+  <!-- <arg name="colors"/> -->
+
+  <!-- Specify standards. -->
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+
+  <!-- Set ignore extensions. -->
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,md,txt"/>
+
+  <!-- Set ignore extensions. -->
+  <!-- <arg name="ignore" value="*.css,*.md,*.txt"/> -->
+
+  <!-- Specify folders. -->
+  <file>web/modules/custom</file>
+  <file>web/themes/custom</file>
+</ruleset>

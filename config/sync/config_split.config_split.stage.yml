@@ -1,0 +1,20 @@
+uuid: 6b76c6ff-6d2e-4b8c-9907-186e1ce16282
+langcode: fr
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/stage
+module:
+  dblog: 0
+  shield: 0
+theme: {  }
+complete_list:
+  - system.file
+  - system.performance
+partial_list: {  }
