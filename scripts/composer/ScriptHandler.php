@@ -10,6 +10,7 @@ namespace DrupalProject\composer;
 use Composer\Script\Event;
 use Composer\Semver\Comparator;
 use Drupal\Core\Site\Settings;
+use Drupal\Core\Site\SettingsEditor;
 use DrupalFinder\DrupalFinder;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Path;
@@ -19,7 +20,7 @@ class ScriptHandler {
 
   /**
    * Generate missing base files such as setting files, salt and dotenv.
-   * 
+   *
    * @param \Composer\Script\Event $event
    *   The event.
    */
@@ -53,7 +54,7 @@ class ScriptHandler {
         'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
         'required' => TRUE,
       ];
-      drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
+      SettingsEditor::rewrite($drupalRoot . '/sites/default/settings.php', $settings);
       $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
       $event->getIO()->write("Created a sites/default/settings.php file with chmod 0666");
     }
@@ -105,9 +106,9 @@ class ScriptHandler {
 
   /**
    * Helper method to run any executable available in vendor/bin.
-   * 
+   *
    * Process output is logged under logs/{$exec}.log
-   * 
+   *
    * @param \Composer\Script\Event $event
    *   The event.
    * @param string $exec
@@ -142,7 +143,7 @@ class ScriptHandler {
 
   /**
    * Handler our custom composer script to run PHPCBF.
-   * 
+   *
    * @param \Composer\Script\Event $event
    *   The event.
    */
@@ -152,7 +153,7 @@ class ScriptHandler {
 
   /**
    * Handler our custom composer script to run PHPCS.
-   * 
+   *
    * @param \Composer\Script\Event $event
    *   The event.
    */
@@ -162,7 +163,7 @@ class ScriptHandler {
 
   /**
    * Handler our custom composer script to run PHPSTAN.
-   * 
+   *
    * @param \Composer\Script\Event $event
    *   The event.
    */

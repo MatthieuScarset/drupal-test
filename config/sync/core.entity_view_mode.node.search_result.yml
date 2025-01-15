@@ -1,11 +1,11 @@
-uuid: bd83ee7a-4446-41a8-acda-9eebee72a1d3
+uuid: 0195f687-4fc2-44f3-b75f-48b836f38df4
 langcode: en
 status: false
 dependencies:
   module:
     - node
 _core:
-  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+  default_config_hash: d8wBEm7XvJ6H3S0IneDD9PfTBklPIH7GMpxElVemPf8
 id: node.search_result
 label: 'Search result highlighting input'
 description: ''

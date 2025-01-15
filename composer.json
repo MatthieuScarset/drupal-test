@@ -22,13 +22,13 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
-    "drush/drush": "^12",
+    "drush/drush": "^13.3",
     "vlucas/phpdotenv": "^5",
     "webflo/drupal-finder": "^1"
   },
   "require-dev": {
     "drupal/coder": "^8",
-    "drupal/core-dev": "^10"
+    "drupal/core-dev": "^11"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -41,10 +41,11 @@
     "allow-plugins": {
       "composer/installers": true,
       "cweagans/composer-patches": true,
-      "drupal/core-composer-scaffold": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
+      "drupal/core-composer-scaffold": true,
+      "php-http/discovery": true,
       "phpstan/extension-installer": true,
-      "php-http/discovery": true
+      "tbachert/spi": true
     }
   },
   "autoload": {
